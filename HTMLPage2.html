@@ -1,0 +1,197 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<style type= "text/css">
+h1 {text-align: center; color: black; text-decoration: underline; text-transform: uppercase; text-align: center; font-family: arial;}
+p.p2 {text-align:center; font-size: 22px; font-family: arial;}
+li:hover {background-color: white}
+ul {text-align: center;}
+ul {
+    list-style-type: none;
+    margin: 10;
+    padding: 10;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #888;
+}
+p.p1 {text-align: center; font-size: 30px;}
+body {background-color: white;}
+p.p3 {image-align: left;}
+input[type=text] {
+    border: 2px solid black;
+    border-radius: 4px;
+}
+
+input[type=checkbox] {
+    border: 2px solid black;
+    border-radius: 4px;
+	}
+
+input[type=submit]	{ border: 2px solid black;
+    border-radius: 4px;
+}
+input[type=reset]	{ border: 2px solid black;
+    border-radius: 4px;
+}
+input[type=password]	{ border: 2px solid black;
+    border-radius: 4px;
+}
+
+</style>
+
+<script type="text/javascript">
+function formvalidation()
+
+{
+	x = document.getElementById('un').value;
+	y = document.getElementById('pass').value;
+	
+	patt1 = /^[0-9a-zA-Z]+$/; 
+if  ( x == "" || x == null || x.length < 6 || !patt1.test(x) )
+{
+	alert("Invalid username or password!");
+	 	document.getElementById('un').select();
+	return false;
+}
+if  ( y == "" || y == null || y.length < 6 || !patt1.test(y) )
+ {  
+ alert("Invalid username or password!");
+  	document.getElementById('pass').select();
+	return false;
+	}
+	return true;
+
+}
+
+function formvalidations()
+
+{
+p = document.getElementById('dropdown').value;
+if  ( p == "" || p == null  )
+
+{
+	alert("Please select at least one option");
+	document.getElementById('dropdown').select();
+	return false;
+}
+	return true;
+
+}
+
+</script>
+
+
+
+   <table align="right">
+<form onsubmit="return formvalidation();">
+
+<tr>   <td>  <input type="text" name="name" placeholder="Username" id="un">              
+       <td><input type="Password" name="Password" placeholder="Password" id="pass" > 
+<input type="Submit" value="Sign In"> 
+<input type="Submit" value="Register"> 
+</table>
+</form>
+</tr>
+</td>
+
+</tr>
+</td>
+
+
+<body>
+
+
+<p class="p3"> <img src="weltec_logo.png">  </img> 
+<p class="p1"> <h1> IT Jobseeker Support </h1> 
+</br> </br>
+	<ul>
+ <li> <a href="Homepage.html">Home</a></li>
+ <li> <a href="Employer Reg.html ">Employer Registration </a></li>
+ <li> <a href="Employer Page.html ">Employer Page </a></li>
+ <li> <a href="Job Search Page.html ">Job Search Page </a></li>
+ <li> <a href="Feedback Page.html ">Feedback Page </a></li>
+	</ul>
+	
+	</br> </br>
+	
+ 
+	
+<table class="center">
+
+	<form onsubmit="return formvalidations();">
+  <select name="Section of IT" id="dropdown">
+	<option value=""></option>
+    <option value="Specialization">Specialization</option>
+    <option value="Security And Assurance">Security and Assurance</option>
+    <option value="Help desk">Help Desk Operator</option>
+    <option value="Analyst">Junior Analyst</option>
+	  <option value="Networking">Networking Architect</option>
+  </select>
+  <form >
+  <select name="Job" id="dropdown">
+  <option value=""></option>
+    <option value="Job type">Job type</option>
+    <option value="Full time">Full Time Position </option>
+    <option value="Part time">Part Time Position</option>
+    <option value="Temp">Temporary Roles</option>
+	<option value="Contractor">Contractor</option>
+  </select>
+  <form >
+    <form >
+  <select name="Job Title" id="dropdown">
+  <option value=""></option>
+    <option value="Job Title">Job Title</option>
+    <option value="Senior Position">Senior Position </option>
+    <option value="Junior Positon">Junior Position</option>
+    <option value="CEO">CEO</option>
+	<option value="Assistant">Assistant</option>
+  </select>
+  <form >
+  <select name="Location" id="dropdown">
+  <option value=""></option>
+    <option value="Location">Location</option>
+    <option value="Auckland">Auckland </option>
+    <option value="Wellington">Wellington</option>
+    <option value="Taupo">Taupo</option>
+	<option value="Christchurch">Christchurch</option>
+  </select>
+  
+ 
+ &nbsp; <input type="submit" value="Search">
+</form>
+</td> </tr>
+</table>
+
+	
+<p class="p2"> IT Jobseeker Support is a webpage to help IT professionals find a job placement in the industry. 
+We strive to place everyone who uses our website with a job. We currently have a 90% success rate with clients </p>
+
+</br>
+
+
+<p class="p1"> <img src="Location.png"> <img/>
+
+<p class="p2"> Our business is located at the WelTec Campus, or phone 0221087121 for assistance. Alternatively you can email us at ITjobseeker@gmail.com </p>
+
+</br> </br>
+
+
+
+</body>
+</head>
+</html>
